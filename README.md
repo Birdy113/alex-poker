@@ -1,6 +1,8 @@
 # alex-poker
 i didnt find any poker to RSG so i converted one free from VORP
 
+At the moment is in Norwegian ill convert back to english soon :D
+
 A free, open-source RSG RedM script for poker.
 
 ## Features
