@@ -48,8 +48,7 @@ function RSGPrompts:SetupPromptGroup()
     return group
 end
 
--- Keep shamey-core integration (unchanged)
-RainbowCore = exports["shamey-core"] and exports["shamey-core"]:initiate() or {}
+
 
 -- ===== Prompt compatibility shim (replaces VORPutils.Prompts) =====
 -- This exposes the same methods your script expects:
@@ -212,12 +211,9 @@ Citizen.CreateThread(function()
     while true do
         local playerPedId = PlayerPedId()
         if playerPedId then
-            if RainbowCore and RainbowCore.CanPedStartInteraction then
-                isPlayerOccupied = not RainbowCore.CanPedStartInteraction(playerPedId)
-            else
-                -- if RainbowCore not present, assume player is not occupied
-                isPlayerOccupied = false
-            end
+
+            isPlayerOccupied = false
+
         end
         Wait(200)
     end
