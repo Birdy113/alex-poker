@@ -12,7 +12,6 @@ A free, open-source RSG RedM script for poker.
 - Support for all possible win scenarios, with an advanced tie-breaker
 - Configurable (tables, chairs, buttons, audio, animations)
 - Discord logging (via webhook)
-- Organized & documented
 - Performant
 
 # CREDITS SHAMEY
